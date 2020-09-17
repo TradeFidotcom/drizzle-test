@@ -101,6 +101,12 @@ const path = require("path");
 module.exports = {
   contracts_build_directory: path.join(__dirname, "client/src/contracts"),
   networks: {
+    rinkeby: {
+      provider: function() {
+        return new HDWalletProvider(mnemonic, "https://rinkeby.infura.io/v3/3ed304bab9c94ed08de8ae756f092ca6")
+      },
+      network_id: 4
+    }
   },
   mocha: {
   },
