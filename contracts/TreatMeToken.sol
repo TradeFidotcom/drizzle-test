@@ -747,7 +747,7 @@ contract TreatMeToken is ERC20 {
     // Initialises smart contract with supply of tokens going to the address that
     // deployed the contract.
     constructor() public ERC20("TreatMeToken", "TREAT") {
-        _mint(msg.sender, 10000);
+        _mint(msg.sender, 1000);
         _setupDecimals(0); // Sets TREATs as integers only
         owner = msg.sender;
     }
